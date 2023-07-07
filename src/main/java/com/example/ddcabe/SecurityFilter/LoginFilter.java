@@ -38,7 +38,7 @@ public class LoginFilter extends OncePerRequestFilter {
         String path = request.getRequestURI();
 
         //We have login is the allowed method, as it will return JWT to the front end
-        return "/users/login".equals(path);
+        return "/users/login".equals(path) || "/users/test".equals(path);
     }
 
     @Override
