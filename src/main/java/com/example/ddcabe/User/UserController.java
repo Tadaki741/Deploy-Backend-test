@@ -29,8 +29,9 @@ public class UserController {
     }
 
     @GetMapping("/test")
-    public String test () {
-        return "Test";
+    public User test () {
+        User user = new User("test","testpass","operator");
+        return user;
     }
 
 
